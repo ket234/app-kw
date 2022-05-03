@@ -12,7 +12,7 @@
 
     .login_area {
 
-        border: 1px solid black;
+        border: 1px solid rgb(67, 129, 131);
         min-width: 500px;
         padding-left: 10px;
         padding-right: 10px;
@@ -20,5 +20,14 @@
         top: 0;
         transform: translate(50%, 50%);
         z-index: 1;
+    }
 
+    .login_area h2{
+        color: antiquewhite;
+    }
+    #pass-link:hover{
+        color: rgb(227, 222, 232);
+    }
+    .login_area form label{
+        color: antiquewhite;
     }

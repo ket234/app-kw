@@ -24,7 +24,7 @@
                 <h2>Login Here</h2>
                 <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
                     <div class="form-group">
-                        <label for="username">Username</label>
+                        <label id="name" for="username">Username</label>
                         <input type="text" formControlName="username" class="form-control"
                             [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
                         <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
@@ -45,6 +45,11 @@
                         <button [disabled]="loading" class="btn btn-primary btn-register">Register</button>
                     </div>
                 </form>
+                <div class="password">
+                    <a href="">
+                        <lable id="pass-link">Forgot password?</lable>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
